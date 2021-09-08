@@ -11,8 +11,9 @@ import unittest
     
 """
 def gyldig_bagasje(vekt):
-    gyldig = True
-    return gyldig
+    if vekt < 32 and vekt > 2:
+        return True
+    return False
 
 class BaggageValidator(unittest.TestCase):
     def test_underweight(self):

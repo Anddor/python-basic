@@ -8,7 +8,11 @@ import unittest
 
 """
 def telle_sauer(antall):
-    return []
+    ListSau = []
+    for tall in range(antall):
+        ListSau.append(tall + 1)
+    print(ListSau)
+    return ListSau
 
 class CountingList(unittest.TestCase):
     def test(self):
