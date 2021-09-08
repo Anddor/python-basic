@@ -6,11 +6,11 @@ class AssignmentTask(unittest.TestCase):
 
     """
 
-    navn == "Elvebakken"
-    navn == navn + " VGS"
+    navn = "Elvebakken"
+    navn += " VGS"
 
     def test(self):
-        self.assertEquals(navn, "Elvebakken VGS")
+        self.assertEqual(AssignmentTask.navn, "Elvebakken VGS")
         
 
 if __name__ == '__main__':
