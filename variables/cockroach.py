@@ -1,4 +1,5 @@
 import unittest
+import math
 
 class CockroachTask(unittest.TestCase):
     """
@@ -13,7 +14,9 @@ class CockroachTask(unittest.TestCase):
     cm_i_sekundet = 0
 
     def calculate(self, kilometer_i_timen):
-        self.cm_i_sekundet = 0 # TODO skriv koden her
+        floatkm = kilometer_i_timen
+        kmcm = math.floor(floatkm * 100000 / 60 / 60)
+        self.cm_i_sekundet = kmcm # TODO skriv koden her
   
 
     def test(self):

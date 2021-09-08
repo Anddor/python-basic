@@ -9,8 +9,9 @@ fiks slangen slik den er i riktig rekkefølge: ["hode", "kropp", "hale"]
 
 """
 def fixSnake(snake):
+
     # TODO fiks slange
-    return snake
+    return list(reversed(snake))
 
 class FixSnake(unittest.TestCase):
     def test(self):
