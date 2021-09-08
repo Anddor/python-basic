@@ -8,14 +8,14 @@ import unittest
 
 """
 def telle_sauer(antall):
-    return []
+    return [x+1 for x in range(antall)]
 
 class CountingList(unittest.TestCase):
     def test(self):
-        self.assertEquals(telle_sauer(4), [1, 2, 3, 4])
+        self.assertEqual(telle_sauer(4), [1, 2, 3, 4])
 
     def test_single(self):
-        self.assertEquals(telle_sauer(1), [1])
+        self.assertEqual(telle_sauer(1), [1])
 
         
 
