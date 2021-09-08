@@ -1,5 +1,5 @@
 import unittest
-
+from math import ceil
 
 """
     Norwegian beskriver reglene for bagasje slik:
@@ -11,8 +11,7 @@ import unittest
     Prisen er per begynte kilo rundet oppover.
 """
 def bagasje_overvekt(vekt):
-    pris = 0
-    return pris
+    return ceil(vekt - 23 if vekt > 23 else 0) * 135
 
 class BaggageCalc(unittest.TestCase):
     def test_underweight(self):
