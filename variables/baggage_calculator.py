@@ -11,6 +11,7 @@ import unittest
     Prisen er per begynte kilo rundet oppover.
 """
 def bagasje_overvekt(vekt):
+    #skriv her
     pris = 0
     return pris
 

@@ -6,7 +6,11 @@ import unittest
     Hvis listen er tom skal svaret være 0.
 """
 def positive_sum(liste):
-    return 0
+    sum = 0
+    for tall in liste:
+        if tall > 0:
+            sum = sum + tall
+    return sum
 
 class CountingList(unittest.TestCase):
     def basic_test_cases(self):
