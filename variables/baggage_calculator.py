@@ -1,4 +1,5 @@
 import unittest
+import math
 
 
 """
@@ -11,8 +12,11 @@ import unittest
     Prisen er per begynte kilo rundet oppover.
 """
 def bagasje_overvekt(vekt):
-    #skriv her
     pris = 0
+    if vekt >= 23:
+        overvekt = math.ceil(vekt - 23)
+        pris = overvekt * 135
+        print(overvekt)
     return pris
 
 class BaggageCalc(unittest.TestCase):
