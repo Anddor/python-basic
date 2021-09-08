@@ -8,12 +8,11 @@ class IsItANumberTask(unittest.TestCase):
 
     is_number = False
     def is_a_number(self, maybe_number):
-        a = self.is_number
-        if (self.maybe_number.isnumeric() == True): 
-            return True
-        else:
-            return False
-        is_number = False
+        try:
+            float(maybe_number)
+            self.is_number = True
+        except:
+            self.is_number = False
 
     def test_true(self):
         self.is_a_number("1")
@@ -22,7 +21,7 @@ class IsItANumberTask(unittest.TestCase):
 
     def test_false(self):
         self.is_a_number("Tekst")
-        self.assertTrue(self.is_number, False)
+        self.assertFalse(self.is_number, False)
         
     def test_pi(self):
         self.is_a_number("3.14")
@@ -30,7 +29,7 @@ class IsItANumberTask(unittest.TestCase):
 
     def test_spaces(self):
         self.is_a_number("3    4")
-        self.assertTrue(self.is_number, False)
+        self.assertFalse(self.is_number, False)
     
     def test_untrimmed(self):
         self.is_a_number("3  ")
