@@ -4,14 +4,23 @@ import unittest
 """
     Vi går tilbake til Norwegian sin bagasje-definisjon: 
     
-    * Hvert enkelt kolli må ikke veie mer enn 32 kg eller mindre enn 2 kg.
+    * Hvert enkelt kolli må ikke veie mer enn 32 kg 
+    eller mindre enn 2 kg.
     
-    Lag koden som gir tilbake Boolean om bagasjen er gyldig gitt vekten `vekt`
+    Lag koden som gir tilbake Boolean om bagasjen er 
+    gyldig gitt vekten `vekt`
     Hint: Bruk if
     
 """
 def gyldig_bagasje(vekt):
     gyldig = True
+    if vekt > 32:
+        gyldig = False
+    elif vekt < 2: 
+        gyldig = False 
+    else: 
+        gyldig = True
+
     return gyldig
 
 class BaggageValidator(unittest.TestCase):

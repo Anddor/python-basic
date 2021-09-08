@@ -8,8 +8,11 @@ Funksjonen får inn en liste med tre elementer, ["hale", "kropp", "hode"],
 fiks slangen slik den er i riktig rekkefølge: ["hode", "kropp", "hale"]
 
 """
+
 def fixSnake(snake):
-    # TODO fiks slange
+    snake = ["hale", "kropp", "hode"]
+    myorder = [2,1,0]
+    snake = [snake[i] for i in myorder]
     return snake
 
 class FixSnake(unittest.TestCase):

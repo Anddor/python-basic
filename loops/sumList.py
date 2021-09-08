@@ -1,11 +1,14 @@
 import unittest
 
-
 """
-    Gitt en liste med tall, summer opp alle de positive elementene i listen.
+    Gitt en liste med tall, summer opp alle de positive elementene i 
+    listen.
     Hvis listen er tom skal svaret være 0.
 """
-def positive_sum(liste):
+def positive_sum(list):
+    liste = []
+    for list in range(1,liste + 1):
+        sum(liste)
     return 0
 
 class CountingList(unittest.TestCase):
