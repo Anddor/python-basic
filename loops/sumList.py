@@ -6,7 +6,7 @@ import unittest
     Hvis listen er tom skal svaret være 0.
 """
 def positive_sum(liste):
-    return 0
+    return sum(filter(lambda x: x > 0, liste))
 
 class CountingList(unittest.TestCase):
     def basic_test_cases(self):
