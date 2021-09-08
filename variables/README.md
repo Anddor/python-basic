@@ -9,7 +9,7 @@ For eksempel er noe en streng hvis vi skriver det med `"`:
 "hei"
 ```
 (Vi kaller det en streng fordi det er en "streng" av bokstaver.)
-
+git@github.com:Anddor/python-basic.gitgit@github.com:Anddor/python-basic.git
 Hvis vi skriver et heltall rett frem er det et bare et heltall, kalt en `Integer` eller `int`:
 ```python
 1
