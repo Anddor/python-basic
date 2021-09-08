@@ -9,28 +9,30 @@ class IsItANumberTask(unittest.TestCase):
     is_number = False
     def is_a_number(self, maybe_number):
         ## TODO SKRIV KODEN HER
-        is_number = False
+        try: float(maybe_number)
+        except: self.is_number = False
+        else: self.is_number = True
 
     def test_true(self):
         self.is_a_number("1")
 
-        self.assertTrue(self.is_number, True)
+        self.assertTrue(self.is_number)
 
     def test_false(self):
         self.is_a_number("Tekst")
-        self.assertTrue(self.is_number, False)
+        self.assertFalse(self.is_number)
         
     def test_pi(self):
         self.is_a_number("3.14")
-        self.assertTrue(self.is_number, True)
+        self.assertTrue(self.is_number)
 
     def test_spaces(self):
         self.is_a_number("3    4")
-        self.assertTrue(self.is_number, False)
+        self.assertFalse(self.is_number)
     
     def test_untrimmed(self):
         self.is_a_number("3  ")
-        self.assertTrue(self.is_number, True)
+        self.assertTrue(self.is_number)
         
 
 if __name__ == '__main__':
