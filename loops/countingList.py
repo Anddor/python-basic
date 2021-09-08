@@ -8,7 +8,13 @@ import unittest
 
 """
 def telle_sauer(antall):
-    return []
+    add = 0
+    tom= []
+    for i in range (antall):
+        add = add +1
+        tom.append(add)
+
+    return tom
 
 class CountingList(unittest.TestCase):
     def test(self):

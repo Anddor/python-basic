@@ -1,13 +1,15 @@
 import unittest
 
+navn = "Elvebakken"
+navn = navn + " VGS"
 class AssignmentTask(unittest.TestCase):
     """
     I denne oppgaven blir ikke variabelen som skal ha navnet på skolen opprettet riktig. Finner du feilen?
 
     """
 
-    navn == "Elvebakken"
-    navn == navn + " VGS"
+    navn = "Elvebakken"
+    navn = navn + " VGS"
 
     def test(self):
         self.assertEquals(navn, "Elvebakken VGS")

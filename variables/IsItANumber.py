@@ -8,7 +8,11 @@ class IsItANumberTask(unittest.TestCase):
 
     is_number = False
     def is_a_number(self, maybe_number):
-        ## TODO SKRIV KODEN HER
+        a = self.is_number
+        if (self.maybe_number.isnumeric() == True): 
+            return True
+        else:
+            return False
         is_number = False
 
     def test_true(self):
