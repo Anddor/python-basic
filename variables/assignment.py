@@ -1,4 +1,4 @@
-import unittest
+im]port unittest
 
 class AssignmentTask(unittest.TestCase):
     """
@@ -6,8 +6,8 @@ class AssignmentTask(unittest.TestCase):
 
     """
 
-    navn == "Elvebakken"
-    navn == navn + " VGS"
+    navn = "Elvebakken"
+    navn = navn + " VGS"
 
     def test(self):
         self.assertEquals(navn, "Elvebakken VGS")
